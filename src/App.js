@@ -1,22 +1,22 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { loadGames } from "./actions/gameActions";
+import React from 'react';
 
-const App = () => {
-  const dispatch = useDispatch();
+import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
+import { Navbar } from './components';
+import './App.css';
 
-  useEffect(() => {
-    dispatch(loadGames());
-  }, []);
-
-  const games = useSelector((state) => state.games )
-  // console.log("games is :", games)
-  
-  return (
-    <div>
-      <h1>this is app </h1>
-    </div>
-  );
-};
+const App = () => (
+  <div>
+    <Navbar />
+    <Header />
+    <AboutUs />
+    <SpecialMenu />
+    <Chef />
+    <Intro />
+    <Laurels />
+    <Gallery />
+    <FindUs />
+    <Footer />
+  </div>
+);
 
 export default App;
