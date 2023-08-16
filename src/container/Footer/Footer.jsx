@@ -71,11 +71,11 @@ const Footer = () => {
           <span>
             <a
               rel="noreferrer"
-              href="https://github.com/ErfanMalakouti"
+              href="https://github.com/mortezaabolfathi"
               target="_blank"
               style={{ textDecoration: "underline" }}
             >
-              Erfan Malakouti
+             Morteza Abolfathi
             </a>
           </span>
           . All Rights reserved.
